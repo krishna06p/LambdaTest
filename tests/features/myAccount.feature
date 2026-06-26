@@ -2,7 +2,7 @@ Feature: Test My Account Page
 
   Scenario: Verify the title of the My Account page
     Given I am on the My Account page
-    Then the title should be "My Account"
+    Then the account page title should be "My Account"
 
   Scenario Outline: Verify the presence of the "<menuOption>" link
     Given I am on the My Account page

@@ -2,7 +2,7 @@ Feature: Home Page
 
   Scenario: Verify the title of the home page
     Given I am on the home page
-    Then the title should be "Your Store"
+    Then the home page title should be "Your Store"
 
   Scenario: Verify the presence of the main banner
     Given I am on the home page

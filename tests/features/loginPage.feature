@@ -2,7 +2,7 @@ Feature: Login Test
 
   Scenario: Verify the title of the login page
     Given I am on the login page
-    Then the title should be "Account Login"
+    Then the login page title should be "Account Login"
 
   Scenario: Verify the presence of the login form
     Given I am on the login page
@@ -10,7 +10,7 @@ Feature: Login Test
 
   Scenario: Verify the presence of the "Forgotten Password" link
     Given I am on the login page
-    Then I should see the "Forgotten Password" link
+    Then I should see the "Forgotten Password" link on login page
 
 Scenario: Verify the presence of the "Register Account" link
     Given I am on the login page

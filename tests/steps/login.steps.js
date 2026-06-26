@@ -8,14 +8,18 @@ Given('I am on the login page', async ({page}) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login');
 });
 
+Then('the login page title should be {string}', async ({}, arg) => {
+  // Step: Then the login page title should be "Account Login"
+  // From: tests\features\loginPage.feature:5:5
+});
+
 Then('I should see the login form', async ({page}) => {
   // Step: Then I should see the login form
   // From: features\loginPage.feature:9:5
-  await 
   await expect(page.locator('#content').locator('form')).toBeVisible();
 });
 
-Then('I should see the {string} link', async ({page}, arg) => {
+Then('I should see the {string} link on login page', async ({page}, arg) => {
   // Step: Then I should see the "Forgotten Password" link
   // From: features\loginPage.feature:13:5
   await expect(page.locator('form').locator(`a:text("${arg}")`)).toBeVisible();

@@ -13,7 +13,7 @@ Given('I am on the My Account page', async ({page}) => {
     await expect(page).toHaveURL('https://ecommerce-playground.lambdatest.io/index.php?route=account/account');
 });
 
-Then('the title should be {string}', async ({page}, arg) => {
+Then('the account page title should be {string}', async ({page}, arg) => {
   // Step: Then the title should be "My Account"
   // From: features\myAccount.feature:5:5
   await expect(page).toHaveTitle(arg);
