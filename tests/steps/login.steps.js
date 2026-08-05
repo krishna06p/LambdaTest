@@ -1,6 +1,7 @@
-import { expect } from '@playwright/test';
-import { createBdd } from 'playwright-bdd';
-const { Given, Then, When } = createBdd();
+//import { expect } from '@playwright/test';
+//import { createBdd } from 'playwright-bdd';
+const { test, expect, Given, Then, When } = require('../fixture/fixture');
+//const { Given, Then, When } = createBdd();
 
 Given('I am on the login page', async ({page}) => {
   // Step: Given I am on the login page

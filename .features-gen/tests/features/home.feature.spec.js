@@ -3,19 +3,19 @@ import { test } from "playwright-bdd";
 
 test.describe('Home Page', () => {
 
-  test('Verify the title of the home page', async ({ Given, page, Then }) => { 
-    await Given('I am on the home page', null, { page }); 
-    await Then('the home page title should be "Your Store"', null, { page }); 
+  test('Verify the title of the home page', async ({ Given, homePage, Then }) => { 
+    await Given('I am on the home page', null, { homePage }); 
+    await Then('the home page title should be "Your Store"', null, { homePage }); 
   });
 
-  test('Verify the presence of the main banner', async ({ Given, page, Then }) => { 
-    await Given('I am on the home page', null, { page }); 
-    await Then('I should see the main banner', null, { page }); 
+  test('Verify the presence of the main banner', async ({ Given, homePage, Then }) => { 
+    await Given('I am on the home page', null, { homePage }); 
+    await Then('I should see the main banner', null, { homePage }); 
   });
 
-  test('Verify the navigation menu', async ({ Given, page, Then }) => { 
-    await Given('I am on the home page', null, { page }); 
-    await Then('I should see the navigation menu with options "Home", "Special", "Blog", "Mega Menu", "Addons", "My Account"', null, { page }); 
+  test('Verify the navigation menu', async ({ Given, homePage, Then }) => { 
+    await Given('I am on the home page', null, { homePage }); 
+    await Then('I should see the navigation menu with options "Home", "Special", "Blog", "Mega Menu", "Addons", "My Account"', null, { homePage }); 
   });
 
 });
